@@ -9,7 +9,13 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+    "exif-js": "^2.3.0",
+    "less": "^3.12.2",
+    "less-loader": "^6.2.0",
+    "pixi.js": "^5.3.0",
+    "qs": "^6.9.4",
+    "vue": "^2.6.11",
+    "wx-jssdk-common": "^0.1.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.4.0",

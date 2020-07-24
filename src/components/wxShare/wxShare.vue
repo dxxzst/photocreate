@@ -20,7 +20,7 @@
         methods: {
             shareThis() {
                 const URL = 'https://photo.buaa.edu.cn/codes/2020/touxiangfg/game.php/Home/Share/JDOU_shareWx';
-                const currentUrl = "https://photo.buaa.edu.cn/"; //window.location.href
+                const currentUrl = window.location.href;
                 const data = {url: currentUrl}
                 this.postData(URL, qs.stringify(data))
                     .then((data) => {

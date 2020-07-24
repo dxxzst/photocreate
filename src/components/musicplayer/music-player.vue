@@ -1,7 +1,7 @@
 <template>
     <div id="music" class="music" @click="toggleMusic">
         <div class="note" :class="isPlay ? 'rotating on' : 'off'"></div>
-        <audio :src="musicURL" id="myMusic" preload="preload" loop></audio>
+        <audio :src="musicURL" id="myMusic" preload="auto" loop muted></audio>
     </div>
 </template>
 
@@ -29,7 +29,9 @@
             },
             audioPlay() {
                 let audio = document.getElementById('myMusic')
-                audio.play()
+                this.$nextTick(() => {
+                    audio.play()
+                });
                 document.addEventListener(
                     'WeixinJSBridgeReady',
                     function () {
